@@ -14,7 +14,7 @@ function App() {
       <>
         <Routes>
           <Route path={PATHS.INDEX_PATH} element={<NavBar />}>
-            <Route path={PATHS.INDEX_PATH} element={<HomePage />} />
+            <Route path={PATHS.Home_PATH} element={<HomePage />} />
             <Route path={PATHS.ClickerCounter_PATH} element={<BiscuitClicker/>} />
             <Route path={PATHS.TemperatureChecker_PATH} element={<TemperatureChecker />} />
           </Route>

@@ -1,7 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
 import { useState } from "react";
 import PATHS from "./PATHS";
-
+import "./NavBar.css"
 
 
 function NavBar() {
@@ -10,7 +10,7 @@ function NavBar() {
         <>
         <nav className="navigation">
       <a href="/" className="brand-name">
-        MacroSoft
+        Cookie Clicker
       </a>
     
       <button
@@ -42,30 +42,23 @@ function NavBar() {
             <a href="/Home">Home</a>
           </li>
           <li>
-            <a href="/BiscuitClicker">About</a>
+            <a href="/BiscuitClicker">ClickerCounter</a>
           </li>
           <li>
-            <a href="/TemperatureChecker">Contact</a>
+            <a href="/TemperatureChecker">TemperatureChecker</a>
+          </li>
+          <li>
+            <a href="/CookieNumberCounter">Cookies:67234</a>
+          </li>
+          <li>
+
           </li>
         </ul>
       </div>
     </nav>
     
 
-            <nav>
-                <ul>
-                    <li>
-                        <Link to={PATHS.Home_PATH}>Home</Link>
-                    </li>
-                    <li>
-                        <Link to={PATHS.ClickerCounter_PATH}>ClickerCunter</Link>
-                    </li>
-                    <li>
-                        <Link to={PATHS.TemperatureChecker_PATH}>TemperatureChecker</Link>
-                    </li>
-                  
-                </ul>
-            </nav>
+            
 
             <Outlet />
         </>
